@@ -140,3 +140,19 @@ html {
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes aqua-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  } /* lift 6 px mid-cycle */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aqua-bounce {
+    animation: none;
+  }
+}

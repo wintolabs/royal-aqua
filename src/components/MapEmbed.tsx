@@ -1,13 +1,15 @@
+import { MAP_EMBED_URL } from "@/lib/constants";
+
 export function MapEmbed() {
   return (
-    <iframe
-      title="Royal Aqua location map"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.123...YOUR_EMBED_CODE..."
-      width="100%"
-      height="320"
-      style={{ border: 0 }}
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-    />
+    <div className="w-full overflow-hidden rounded-lg shadow">
+      <iframe
+        title="Royal Aqua location map"
+        src={MAP_EMBED_URL}
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        className="h-72 w-full md:h-[22rem] lg:h-[26rem] aspect-video border-0"
+      />
+    </div>
   );
 }

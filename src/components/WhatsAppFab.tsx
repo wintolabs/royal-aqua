@@ -19,7 +19,7 @@ export function WhatsAppFab() {
         focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-green-300/50
         aqua-bounce
       `}
-      style={{ animation: "aqua-bounce 2s ease-in-out infinite" }}
+      style={{ animation: "aqua-bounce 1.6s ease-in-out infinite" }}
     >
       <IconBrandWhatsapp className="h-12 w-12" />
     </Link>

@@ -147,10 +147,11 @@ html {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-6px);
-  } /* lift 6 px mid-cycle */
+    transform: translateY(-8px); /* lift 8 px mid-cycle */
+  }
 }
 
+/* Respect users who prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .aqua-bounce {
     animation: none;

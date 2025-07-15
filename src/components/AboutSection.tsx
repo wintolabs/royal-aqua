@@ -52,7 +52,7 @@ export function AboutSection() {
         {/* Timeline */}
         <ol className="relative border-l border-slate-200">
           {timeline.map(({ year, title, desc }, i) => (
-            <li key={year} className="mb-12 ml-6">
+            <li key={year + i} className="mb-12 ml-6">
               {/* Dot */}
               <span
                 className={cn(

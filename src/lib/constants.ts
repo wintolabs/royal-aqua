@@ -17,3 +17,6 @@ export const BUSINESS_EMAIL =
   process.env.NEXT_PUBLIC_BUSINESS_EMAIL ?? "no-reply@royalaqua.in";
 export const BUSINESS_ADDRESS =
   process.env.NEXT_PUBLIC_BUSINESS_ADDRESS ?? "Gurgaon, Haryana";
+export const MAP_LINK =
+  process.env.NEXT_PUBLIC_MAP_LINK ??
+  "https://www.google.com/maps/search/?api=1&query=Royal+Aqua+Services+Gurgaon";

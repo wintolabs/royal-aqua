@@ -8,6 +8,7 @@ import {
   BUSINESS_ADDRESS,
   BUSINESS_PHONE_DISPLAY,
   BUSINESS_PHONE_TEL,
+  MAP_LINK,
 } from "@/lib/constants";
 
 const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
@@ -108,9 +109,17 @@ export function Footer() {
           <h4 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-900">
             Location
           </h4>
-          <p className="flex items-start gap-2 text-sm leading-relaxed">
-            <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-blue-600" />
-            {BUSINESS_ADDRESS}
+          <p className="text-sm leading-relaxed">
+            <Link
+              href={MAP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Royal Aqua in Google Maps"
+              className="group inline-flex items-start gap-2 hover:text-blue-600"
+            >
+              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-blue-600 group-hover:text-blue-700" />
+              {BUSINESS_ADDRESS}
+            </Link>
           </p>
           <p className="mt-4 text-sm">
             <span className="font-semibold text-slate-900">Hours:</span> 8:00 AM

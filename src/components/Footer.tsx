@@ -1,18 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
-import { WHATSAPP_NUMBER, WA_MESSAGE } from "@/lib/constants";
+import {
+  WHATSAPP_NUMBER,
+  WA_MESSAGE,
+  BUSINESS_EMAIL,
+  BUSINESS_ADDRESS,
+  BUSINESS_PHONE_DISPLAY,
+  BUSINESS_PHONE_TEL,
+} from "@/lib/constants";
 
 const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
   WA_MESSAGE
 )}`;
-
-// TODO: replace with final address + phone + email from env if desired.
-const BUSINESS_PHONE_DISPLAY = "+91 98XX-XXXXXX";
-const BUSINESS_PHONE_TEL = "+9198XXXXXXXX";
-const BUSINESS_EMAIL = "service@royalaqua.in";
-const BUSINESS_ADDRESS =
-  "Royal Aqua Services, Sector 14, Gurgaon, Haryana 122001";
 
 export function Footer() {
   return (

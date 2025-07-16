@@ -11,6 +11,8 @@ export const MAP_EMBED_URL =
 
 export const BUSINESS_PHONE_DISPLAY =
   process.env.NEXT_PUBLIC_BUSINESS_PHONE_DISPLAY ?? "+91 98XX-XXXXXX";
+export const BUSINESS_PHONE_TEL =
+  process.env.NEXT_PUBLIC_BUSINESS_PHONE_TEL ?? "+9198XXXXXXXX";
 export const BUSINESS_EMAIL =
   process.env.NEXT_PUBLIC_BUSINESS_EMAIL ?? "no-reply@royalaqua.in";
 export const BUSINESS_ADDRESS =

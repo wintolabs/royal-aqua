@@ -8,3 +8,10 @@ export const WA_MESSAGE =
 export const MAP_EMBED_URL =
   process.env.NEXT_PUBLIC_MAP_EMBED_URL ??
   "https://www.google.com/maps/embed?pb=";
+
+export const BUSINESS_PHONE_DISPLAY =
+  process.env.NEXT_PUBLIC_BUSINESS_PHONE_DISPLAY ?? "+91 98XX-XXXXXX";
+export const BUSINESS_EMAIL =
+  process.env.NEXT_PUBLIC_BUSINESS_EMAIL ?? "no-reply@royalaqua.in";
+export const BUSINESS_ADDRESS =
+  process.env.NEXT_PUBLIC_BUSINESS_ADDRESS ?? "Gurgaon, Haryana";

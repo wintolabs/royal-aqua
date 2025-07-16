@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import {
@@ -19,17 +19,15 @@ export function Footer() {
   return (
     <footer className="mt-24 border-t border-slate-200 bg-slate-50 text-slate-700">
       <div className="mx-auto grid w-full max-w-6xl gap-12 px-6 py-16 sm:grid-cols-2 lg:grid-cols-4">
-        {/* Brand */}
         <div>
           <Link href="/" className="flex items-center gap-2">
-            {/* temp logo */}
-            <Image
+            {/* <Image
               src="/water-drop-temp.png" // place temp logo file in /public
               alt="Royal Aqua logo"
               width={32}
               height={32}
               className="h-8 w-8"
-            />
+            /> */}
             <span className="text-lg font-bold text-slate-900">Royal Aqua</span>
           </Link>
           <p className="mt-4 max-w-xs text-sm text-slate-600">
